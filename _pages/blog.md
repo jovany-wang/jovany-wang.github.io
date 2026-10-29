@@ -103,13 +103,17 @@ pagination:
 
 {% endif %}
 
-  <ul class="post-list">
+  {% if page.pagination.enabled %}
+    {% assign postlist = paginator.posts %}
+  {% else %}
+    {% assign postlist = site.posts %}
+  {% endif %}
+  {% assign post_count = postlist | size %}
 
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-    {% else %}
-      {% assign postlist = site.posts %}
-    {% endif %}
+  {% if post_count == 0 %}
+    <p class="post-meta">No posts yet.</p>
+  {% else %}
+  <ul class="post-list">
 
     {% for post in postlist %}
 
@@ -190,8 +194,9 @@ pagination:
     {% endfor %}
 
   </ul>
+  {% endif %}
 
-{% if page.pagination.enabled %}
+{% if page.pagination.enabled and post_count > 0 %}
 {% include pagination.liquid %}
 {% endif %}
 
