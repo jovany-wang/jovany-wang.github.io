@@ -19,8 +19,9 @@ social: true
 
 announcements:
   enabled: false
+# No published posts right now. Turn this back on when something is in _posts.
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: false
   limit: 3
 
