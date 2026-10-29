@@ -1,0 +1,7 @@
+# Social links rendered by jekyll-socials, in this order.
+# Only GitHub and email were present in the previous site.
+# TODO: add any other profiles you want shown, for example
+# linkedin_username, scholar_userid, orcid_id, twitter_username, or bluesky_url.
+email: kingchin1218@gmail.com
+github_username: jovany-wang
+rss_icon: true

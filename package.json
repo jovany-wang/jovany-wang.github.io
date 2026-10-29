@@ -1,0 +1,5 @@
+{
+  "name": "jovany-wang.github.io",
+  "private": true,
+  "description": "Present so the al-folio GitHub Actions deploy workflow can run npm ci. Theme assets come from the al-folio gems, not from npm."
+}
