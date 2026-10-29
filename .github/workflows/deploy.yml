@@ -59,7 +59,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip"
+          # No requirements.txt or pyproject.toml; nbconvert is installed in the build step.
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
