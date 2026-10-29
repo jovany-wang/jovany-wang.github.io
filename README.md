@@ -23,6 +23,6 @@ The site is then at `http://localhost:8080`.
 
 ## Deploy
 
-Pushes to `master` run `.github/workflows/deploy.yml`, which builds the site and commits the result to `gh-pages`. GitHub Pages must be set to publish that branch. See the repository settings note in the migration pull request.
+Pushes to `master` run `.github/workflows/deploy.yml`, which builds the site and deploys `_site` with GitHub's Pages actions. In the repository settings, set Pages to **GitHub Actions** (not a branch).
 
 `CNAME` stays `jovany.wang`. `url` is `https://jovany.wang` and `baseurl` is empty.
